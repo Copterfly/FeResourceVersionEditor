@@ -1,7 +1,5 @@
 # python3实现的前端资源文件(js/css)版本号修改器软件
 
-## 开始
-
 github: https://github.com/Copterfly/FeResourceVersionEditor
 
 具体作用和详情介绍请移步本人博客： http://www.copterfly.cn/server-side/python/feResourceVersionEditor.html
@@ -26,5 +24,17 @@ github: https://github.com/Copterfly/FeResourceVersionEditor
 
 更新版本号后，会自动或可手动重新生成快照，如此循环。
 
+## 如何使用
 
-(完)
+### 文件目录说明：
+
+│  help.chm ---------- 软件的帮助文件（教程），这里实际上用 jQuery 手册代替
+│  icon.ico ---------- 软件的图标
+│  app.py ------------ 软件 GUI 主程序
+│  versionAction.py -- 软件实现替换等各种功能的程序
+│  lib.py ------------ 软件函数库
+│  setup.py ---------- 打包程序：py2exe 打包 python 程序为 exe 可执行文件
+
+python 环境下体验和测试：拉取项目文件后，到当前目录运行 GUI 主程序即可。如： `python app.py`
+
+(未完待续)
