@@ -1,0 +1,15 @@
+﻿@{ 
+    ViewBag.themeName = String.IsNullOrEmpty(ViewBag.themeName) || ViewBag.themeName == "M1" ? "PC_L1" : ViewBag.themeName;
+}
+
+
+@Html.Partial("_Header")
+<link rel="stylesheet" type="text/css" href="@Url.Content("~/Areas/Shop/Themes/PC_L1/Content/Css/index.css?v=20170606-1521")" />
+
+@Html.Partial("_Footer")
+@Html.Partial("_SideBar", Model.SidebarModel)
+
+@section foot{
+    <script type="text/javascript" src="/Scripts/SuperSlide/jquery.SuperSlide.min.js"></script>
+    <script type="text/javascript" src="/Areas/Shop/Themes/@(ViewBag.themeName)/Content/Scripts/index.js?v=20171218-1132"></script>
+}

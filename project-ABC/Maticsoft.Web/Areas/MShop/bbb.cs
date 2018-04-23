@@ -1,0 +1,4 @@
+﻿/**
+* MobileAreaRegistration.cs
+*
+*/

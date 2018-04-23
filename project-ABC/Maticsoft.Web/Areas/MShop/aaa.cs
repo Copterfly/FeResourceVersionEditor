@@ -1,0 +1,4 @@
+﻿/**
+* MAreaRegistration.cs
+*
+*/

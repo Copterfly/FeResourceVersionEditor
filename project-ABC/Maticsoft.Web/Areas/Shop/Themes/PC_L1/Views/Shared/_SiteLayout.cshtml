@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-cn">
+@* PC全局模版 PC_L1 *@
+<head>
+<!-- <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> -->
+<meta http-equiv="Content-Language" content="zh-cn" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+@Html.MaticsoftSEO(PoweredBy: true)
+<link rel="shortcut icon" href="/Images/static/favicon.ico" type="image/x-icon" />
+<link rel="stylesheet" type="text/css" href="@Url.Content("~/Areas/Shop/Themes/PC_L1/Content/Css/global.css?v=20170606-1511")" />
+<link rel="stylesheet" type="text/css" href="@Url.Content("~/css/js-plugin/pc.css?v=20160311-1847")" />
+<link rel="stylesheet" type="text/css" href="@Url.Content("~/Areas/Shop/Themes/PC_L1/Content/Css/Product.css?v=20170606-1510")" />
+<link rel="stylesheet" type="text/css" href="@Url.Content("~/Areas/Shop/Themes/PC_L1/Content/Css/special.css")" />
+
+<script type="text/javascript" src="@Url.Content("~/Scripts/jquery-1.8.3.min.js")"></script>
+@RenderSection("head", false)
+</head>
+<body>
+    @RenderBody()
+    <script type="text/javascript" src="@Url.Content("~/Scripts/jquery.cookie.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/Scripts/artTemplate/artTemplate.min.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/Scripts/common.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/Areas/Shop/Themes/PC_L1/Content/Scripts/global.js?v=201700606-1738")"></script>
+    @RenderSection("foot", false)
+</body>
+</html>

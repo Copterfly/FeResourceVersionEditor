@@ -1,0 +1,15 @@
+﻿@using Webdiyer.WebControls.Mvc
+
+<div id="pageContainer" class="page-account">
+    @Html.Partial("_Header", "登录")
+    <div class="page-body">
+        <!-- 登录页内容 -->
+    </div>
+    <!-- /.page-body -->
+    @Html.Partial("_UserSidebar")
+</div>
+
+@section foot{
+    <script src="@Url.Content("~/Scripts/jquery.validate.min.js")" type="text/javascript"></script>
+    <script type="text/javascript" src="/Areas/MShop/Shared/js/login.js?v=20170622-0949"></script>
+}

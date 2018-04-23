@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+@*全局模版 C1*@
+<meta charset="utf-8" />
+@Html.MaticsoftSEO(PoweredBy: true)
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-touch-fullscreen" content="yes" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<link rel="shortcut icon" href="/Images/static/favicon.ico" type="image/x-icon" />
+<link rel="stylesheet" type="text/css" href="@Url.Content("~/Areas/MShop/Shared/css/global.css?v=20171110-1748")" />
+<link rel="stylesheet" type="text/css" href="@Url.Content("~/Areas/MShop/Shared/css/fullcalendar.css?v=20161009-1533")" />
+<link rel="stylesheet" type="text/css" href="@Url.Content("~/Areas/MShop/Themes/C1/Content/css/global.css?v=20171110-1728")" />
+<script src="@Url.Content("~/Scripts/jquery-1.8.3.min.js")" type="text/javascript"></script>
+@RenderSection("head", false)
+</head>
+<body>
+@RenderBody()
+    <script type="text/javascript" src="@Url.Content("~/Scripts/jquery.cookie.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/Scripts/artTemplate/artTemplate.min.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/Areas/MShop/Shared/js/global.js?v=20171110-1732")"></script>
+    <script type="text/javascript" src="@Url.Content("~/Areas/MShop/Themes/C1/Content/js/global.js?v=20180119-1743")"></script>
+@RenderSection("foot", false)
+</body>
+</html>

@@ -1,0 +1,21 @@
+﻿@{
+    ViewBag.themeName = String.IsNullOrEmpty(ViewBag.themeName) || ViewBag.themeName == "M1" ? "H1" : ViewBag.themeName;
+}
+@section head{
+    <link rel="stylesheet" type="text/css" href="/Areas/MShop/Themes/@(ViewBag.themeName)/Content/css/detail.css?v=20170122-1143" />
+}
+
+<div id="pageContainer" class="page-index">
+    <!-- 主页面 start -->
+    ---
+    <!-- 主页面 end -->
+
+</div>
+
+@*@Html.Partial("_TopSearch")*@
+@section foot{
+    <!-- 手机版没有上下滚动，所以用PC版 -->
+    <script type="text/javascript" src="/Scripts/SuperSlide/jquery.SuperSlide.min.js"></script>
+    <script type="text/javascript" src="/Areas/MShop/Themes/@(ViewBag.themeName)/Content/js/detail.js?v=20170119-1759"></script>
+}
+

@@ -1,0 +1,18 @@
+﻿
+@Html.Partial("_Header")
+<div class="product">
+    <p class="product-p p-title" data-pageTypeId="1">
+        <a href="/Store/@(sidebar.spid)/?lvyouType=0">首页</a> &gt; <a class="blue" href="@(ViewBag.BasePath)Product/ProductList/@suppid/0/?lvyouType=1">旅游</a>
+    </p>
+    <div id="productSeach">
+        @Html.Partial("_SeachFilter", Model)
+    </div>
+    <div id="productList" class="productContent" data-supplier="@(Model.Paramater.SupplierId)">
+        @Html.Partial("_ProductList", Model)
+    </div>
+</div>
+@Html.Partial("_Footer")
+@Html.Partial("_SideBar", sidebar)
+@section foot{
+    <script src="/Areas/Shop/Themes/PC_L1/Content/Scripts/Product.js?v=20170606-1517" type="text/javascript"></script>
+}

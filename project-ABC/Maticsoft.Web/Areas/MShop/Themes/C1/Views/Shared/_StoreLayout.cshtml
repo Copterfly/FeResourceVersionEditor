@@ -1,0 +1,13 @@
+﻿@using System.Web.Mvc.Html
+@{
+    ViewBag.themeName = String.IsNullOrEmpty(ViewBag.themeName) || ViewBag.themeName == "M1" ? "C1" : ViewBag.themeName;
+    Layout = "~/Areas/MShop/Themes/" + ViewBag.themeName + "/Views/Shared/_SiteLayout.cshtml";
+    @*前台店铺模版*@
+}
+@section head{
+    @RenderSection("head", false)
+}
+@RenderBody()
+@section foot{
+    @RenderSection("foot", false)
+}
