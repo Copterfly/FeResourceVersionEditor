@@ -61,11 +61,15 @@ github: https://github.com/Copterfly/FeResourceVersionEditor
 
 ### 体验和测试
 
-**python 环境：** 拉取项目文件后，到当前目录运行 GUI 主程序即可，运行后就会弹出软件窗口。如： `python app.py`
+**方法1 python 环境：**
 
-**没有安装 python 环境：** 解压开 `ABC项目前端资源版本号修改器.zip` 执行 `app.exe` 即可。(需要windows 64位系统)
+拉取项目文件后，到当前目录运行 GUI 主程序即可，运行后就会弹出软件窗口。如： `python app.py`
 
-请使用 project-ABC/Maticsoft.Web 目录作为软件设置项的 `web根目录`。
+**方法2 没有安装 python 环境：**
+
+解压开 `ABC项目前端资源版本号修改器.zip` 执行 `app.exe` 即可。(需要windows 64位系统)
+
+请使用 `project-ABC/Maticsoft.Web` 目录作为软件设置项的 `web根目录`。
 
 然后对照下面的软件操作说明使用即可。
 
