@@ -59,4 +59,4 @@ github: https://github.com/Copterfly/FeResourceVersionEditor
 
 python 环境下体验和测试：拉取项目文件后，到当前目录运行 GUI 主程序即可，运行后就会弹出软件窗口。如： `python app.py`
 
-(未完待续)
+(完)
