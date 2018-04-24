@@ -10,7 +10,7 @@ github: https://github.com/Copterfly/FeResourceVersionEditor
 
 但我还是上传了一份最终生成的 exe 文件，供您体验/研究。
 
-因为是第一次搞 GUI 开发，研发的过程中可谓困难重重，所以源码中我保留了大量的调试注释，也是自己开发思路的一种记录。希望能帮到有需要的朋友。
+因为是第一次搞 GUI 开发，研发的过程中可谓困难重重，所以源码中保留了大量的调试注释，也是对自己开发思路的一种记录。希望能帮到有需要的朋友。
 
 使用说明请往下阅读。
 
@@ -50,13 +50,25 @@ github: https://github.com/Copterfly/FeResourceVersionEditor
 
 ### 文件目录说明：
 
- - help.chm ---------- 软件的帮助文件（教程），这里用 jQuery 手册代替
- - icon.ico ---------- 软件的图标
- - app.py ------------ 软件 GUI 主程序
- - versionAction.py -- 软件实现替换等各种功能的程序
- - lib.py ------------ 软件函数库
- - setup.py ---------- 打包程序：py2exe 打包 python 程序为 exe 可执行文件
+ - help.chm ------------------------- 软件的帮助文件（教程），这里用 jQuery 手册代替
+ - icon.ico ------------------------- 软件的图标
+ - app.py --------------------------- 软件 GUI 主程序
+ - versionAction.py ----------------- 软件实现替换等各种功能的程序
+ - lib.py --------------------------- 软件函数库
+ - setup.py ------------------------- 打包程序：py2exe 打包 python 程序为 exe 可执行文件
+ - ABC项目前端资源版本号修改器.zip -- 已经打包好的程序，解压开后执行 app.exe 即可，或者在 python 环境下运行上面的 app.py ，一样的效果。
+ - project-ABC ---------------------- 网站项目目录(包含一些 js/css/cshtml 及其他伪文件)
 
-python 环境下体验和测试：拉取项目文件后，到当前目录运行 GUI 主程序即可，运行后就会弹出软件窗口。如： `python app.py`
+### 体验和测试
 
-(未完待续)
+**python 环境：** 拉取项目文件后，到当前目录运行 GUI 主程序即可，运行后就会弹出软件窗口。如： `python app.py`
+
+**没有安装 python 环境：** 解压开 `ABC项目前端资源版本号修改器.zip` 执行 `app.exe` 即可。(需要windows 64位系统)
+
+请使用 project-ABC/Maticsoft.Web 目录作为软件设置项的 `web根目录`。
+
+然后对照下面的软件操作说明使用即可。
+
+http://www.copterfly.cn/server-side/python/feResourceVersionEditor.html
+
+(完)
